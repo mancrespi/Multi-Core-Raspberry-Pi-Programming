@@ -1,0 +1,6 @@
+extern void  _init_ipc() ;
+extern void  _init_led() ;
+extern void  _init_time() ;
+_init_ipc() ;
+_init_led() ;
+_init_time() ;

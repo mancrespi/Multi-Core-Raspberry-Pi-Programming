@@ -1,0 +1,16 @@
+MEMORY
+{
+    ram : ORIGIN = 0x0000, LENGTH = __SIZE__
+}
+
+SECTIONS
+{
+    .text : { *(.text*) } > ram
+	.rodata : { *(.rodata*) } > ram
+    .bss : { *(.bss*) } > ram
+	.data : { *(.data*) } > ram
+
+	.usercode  0x02000000 : { *(.usercode*     ) } 
+
+}
+

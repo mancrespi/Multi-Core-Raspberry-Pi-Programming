@@ -1,0 +1,18 @@
+.equ	FIQSTACK3 , 40960
+.equ	IRQSTACK3 , 73728
+.equ	KSTACK3   , 106496
+.equ	USTACK3   , 139264
+.equ	FIQSTACK2 , 32768
+.equ	IRQSTACK2 , 65536
+.equ	KSTACK2   , 98304
+.equ	USTACK2   , 131072
+.equ	FIQSTACK1 , 24576
+.equ	IRQSTACK1 , 57344
+.equ	KSTACK1   , 90112
+.equ	USTACK1   , 122880
+.equ	FIQSTACK0 , 16384
+.equ	IRQSTACK0 , 49152
+.equ	KSTACK0   , 81920
+.equ	USTACK0   , 114688
+.globl heapstart
+heapstart: .word 139264
